@@ -1,0 +1,272 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+<LinearLayout
+    android:id="@+id/test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:src="@drawable/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_alignBottom="@+id/rrr" />
+
+        <ImageView
+            android:id="@+id/rrr"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_mage"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#c20808"
+            android:layout_weight="0.14"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/rrr" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnchoosefile"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_edit_white_96dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/rrr"
+            android:layout_alignStart="@+id/rrr" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="false"
+            android:gravity="center_vertical|center_horizontal">
+
+            <EditText
+                android:id="@+id/TvFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syrine "
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+
+                />
+            <EditText
+                android:id="@+id/TvLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dridi"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="8dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nb_events_48"
+                android:id="@+id/ImgUserStory"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User stories"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/tvNbEvents"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_grey"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="Information"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/light_grey"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_email_red_48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Your email"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/TvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NONE"
+                android:textColor="@color/light_grey"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_phone_48"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your phone"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/TvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+10 Bonus points"
+                android:textColor="@color/light_grey"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Update"
+            android:id="@+id/btnUpdate"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:src="@mipmap/ic_support_white_24dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="right" />
+
+</LinearLayout>
+
+    </ScrollView>
